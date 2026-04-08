@@ -12,6 +12,8 @@ SAP BTP CPI - BASE64_ENCODE_DECODE
 
 ## 🔄 1. Fluxo da Integração
 
+<br>
+
 ### Criando o Package
 ![Fluxo](imagens/Screenshot_1.png)
 
@@ -25,6 +27,8 @@ ZPKG_BASE64_ENCODE_DECODE
 <br>
 
 ## 🧩 2. Criação do Integration Flow
+
+<br>
 
 ### Adicionando o Artefato
 ![Fluxo](imagens/Screenshot_3.png)
@@ -58,7 +62,6 @@ IF_CPI_Base64_EncodeDecode_Service
 ```
 /carros
 ```
-
 <br>
 
 
