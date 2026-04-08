@@ -28,12 +28,14 @@ O retorno inclui:
 
 ## 🌐 🔹 Entrada no Postman
 
-```json
+json
+```
 {
   "id": 1,
   "title": "TESTE",
   "body": "TESTANDO"
 }
+```
 
 <br>
 
