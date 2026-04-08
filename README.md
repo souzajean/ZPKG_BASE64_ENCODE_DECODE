@@ -38,21 +38,28 @@ IF_CPI_Base64_EncodeDecode_Service
 ```
 <br>
 
-## ⚙️ 3. Configuração Inicial do iFlow
+## ⚙️ 3. Configuração do Adapter HTTPS
 
-### Editando o iFlow
+### Adicionando o Adapter
 
 ![Fluxo](imagens/Screenshot_5.png)
 
 <br>
 
-## 🌐 4. Configuração do Adapter HTTPS
+## 🌐 3. Configuração do Adapter HTTPS
 
 ### Adicionando o Adapter
 ![Fluxo](imagens/Screenshot_6.png)
 
 <br>
 
+### Endpoint configurado
+![Fluxo](imagens/Screenshot_7.png)
+```
+/carros
+```
+
+<br>
 
 
 
