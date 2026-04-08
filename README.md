@@ -44,12 +44,12 @@ json
 
 <br>
 
-### Criando o Package
+### 🧱 Criando o Package
 ![Fluxo](imagens/Screenshot_1.png)
 
 <br><br>
 
-### Nome do Package
+### 🏷️ Nome do Package
 ```
 ZPKG_BASE64_ENCODE_DECODE
 ```
@@ -61,12 +61,12 @@ ZPKG_BASE64_ENCODE_DECODE
 
 <br>
 
-### Adicionando o Artefato
+### ➕ Adicionando o Artefato
 ![Fluxo](imagens/Screenshot_3.png)
 
 <br>
 
-### Nome do iFlow
+### 🏷️ Nome do iFlow
 ![Fluxo](imagens/Screenshot_4.png)
 ```
 IF_CPI_Base64_EncodeDecode_Service
@@ -75,15 +75,13 @@ IF_CPI_Base64_EncodeDecode_Service
 
 ## ⚙️ 3. Configuração do Adapter HTTPS
 
-### Adicionando o Adapter
+### ➕ Adicionando o Adapter
 
 ![Fluxo](imagens/Screenshot_5.png)
 
 <br>
 
-## 🌐 3. Configuração do Adapter HTTPS
-
-### Trigger (HTTPS)
+### 🌐 Trigger (HTTPS)
 
 ```
 Adapter: HTTPS
@@ -97,12 +95,12 @@ Endpoint:
 
 ## ⚙️ 4.Content Modifier
 
-### Adicionando o Content Modifier
+### ➕ Adicionando o Content Modifier
 ![Fluxo](imagens/Screenshot_7.png)
 
 <br>
 
-### Renomeando o Content Modifier
+### 🏷️ Renomeando o Content Modifier
 ![Fluxo](imagens/Screenshot_8.png)
 ```
 Name: CM_Save_Base64_Original
@@ -110,7 +108,7 @@ Name: CM_Save_Base64_Original
 
 <br>
 
-### Configurando o Content Modifier
+### ⚙️ Configuração do Content Modifier
 ```
 Name: CM_Save_Base64_Original
 Exchange Property
@@ -130,7 +128,7 @@ Data Type: java.lang.String
 
 <br>
 
-### Renomeando o Content Modifier
+### 🏷️ Renomeando o Content Modifier
 ![Fluxo](imagens/Screenshot_11.png)
 ```
 Name: CM_Save_Decoded_JSON
@@ -138,7 +136,7 @@ Name: CM_Save_Decoded_JSON
 
 <br>
 
-### Configurando o Content Modifier
+### ⚙️ Configuração o Content Modifier
 ```
 Name: CM_Save_Decoded_JSON
 Exchange Property
@@ -152,12 +150,13 @@ Data Type: java.lang.String
 <br>
 
 ## ⚙️ 6. Groovy Script
-### Adicionando o Groovy Script
+
+### ➕ Adicionando o Groovy Script
 ![Fluxo](imagens/Screenshot_13.png)
 
 <br>
 
-### Renomeando o Groovy Script
+### 🏷️ Nome do Groovy Script
 ![Fluxo](imagens/Screenshot_14.png)
 
 ```
@@ -166,12 +165,12 @@ Name: GS_Encode_Base64
 
 <br>
 
-### Adicionando o Groovy Script
+### ➕ Adicionando o Groovy Script
 ![Fluxo](imagens/Screenshot_15.png)
 
 <br>
 
-### Código do Groovy Script
+### 💻 Código do Groovy Script
 ```
 import com.sap.gateway.ip.core.customdev.util.Message
 import java.util.Base64
@@ -193,12 +192,12 @@ def Message processData(Message message) {
 
 ## ⚙️ 7. Content Modifier
 
-### Adicionando o Content Modifier
+### ➕ Adicionando o Content Modifier
 ![Fluxo](imagens/Screenshot_17.png)
 
 <br>
 
-### Configurando o Content Modifier
+### ⚙️ Configuração do Content Modifier
 ```
 Name: CM_Save_Encoded_Base64
 Exchange Property
@@ -213,12 +212,12 @@ Data Type: java.lang.String
 
 ## ⚙️ 8. Content Modifier
 
-### Adicionando o Content Modifier
+### ➕ Adicionando o Content Modifier
 ![Fluxo](imagens/Screenshot_19.png)
 
 <br>
 
-### Renomeando o Content Modifier
+### 🏷️ Nome do Content Modifier
 ```
 Name: CM_Build_Final_Response
 ```
@@ -226,7 +225,7 @@ Name: CM_Build_Final_Response
 
 <br>
 
-### Configurando o Content Modifier
+### ⚙️ Configuração do Content Modifier
 ```
 Type: Expression
 Body: 
@@ -242,7 +241,7 @@ Body:
 
 ## 9. 🎯 Resultado
 
-### Resposta Decode e Encode
+### ✅ Resposta Decode e Encode
 ```
 {
   "base64_original": "eyJpZCI6MSwidGl0bGUiOiJURVNURSIsImJvZHkiOiJURVNUQU5ETyJ9",
