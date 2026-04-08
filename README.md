@@ -14,7 +14,7 @@ SAP BTP CPI - BASE64_ENCODE_DECODE
 
 ### Entrada no Postman
 
-🌐 🔹 1.POSTMAN
+## 🌐 🔹 1.POSTMAN
 ```
 {
   "id": 1,
@@ -23,16 +23,31 @@ SAP BTP CPI - BASE64_ENCODE_DECODE
 }
 ```
 
-🧩 🔧 iFlow COMPLETO (Baseado nessa JSON)
+## 🧩 🔧 iFlow COMPLETO (Baseado nessa JSON)
 
 
-⚙️ 1. Trigger (HTTPS)
+### ⚙️ 1. Trigger (HTTPS)
+
 ```
 Adapter: HTTPS
 Method: GET ou POST
 Endpoint:
 /download-anexo
 ```
+## 📦 2. Criação do Pacote 
+
+### Criando o Package
+![Fluxo](imagens/Screenshot_1.png)
+
+<br>
+
+### Nome do Package
+![Fluxo](imagens/Screenshot_2.png)
+```
+ZPKG_BASE64_ENCODE_DECODE
+```
+<br>
+
 
 ⚙️ 2.Content Modifier
 ```
