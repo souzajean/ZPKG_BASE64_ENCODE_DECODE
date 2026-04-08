@@ -34,8 +34,23 @@ ZPKG_BASE64_ENCODE_DECODE
 ### Nome do iFlow
 ![Fluxo](imagens/Screenshot_4.png)
 ```
-IF_Carros_Router_XPath_vs_Header
+IF_CPI_Base64_EncodeDecode_Service
 ```
+<br>
+
+## ⚙️ 3. Configuração Inicial do iFlow
+
+### Editando o iFlow
+
+![Fluxo](imagens/Screenshot_5.png)
+
+<br>
+
+## 🌐 4. Configuração do Adapter HTTPS
+
+### Adicionando o Adapter
+![Fluxo](imagens/Screenshot_6.png)
+
 <br>
 
 
