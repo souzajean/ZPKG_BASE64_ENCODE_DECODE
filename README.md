@@ -119,9 +119,47 @@ Data Type: java.lang.String
 ```
 ![Fluxo](imagens/Screenshot_12.png)
 
+<br>
 
+## ⚙️ 6. Groovy Script
+### Adicionando o Groovy Script
+![Fluxo](imagens/Screenshot_13.png)
 
+<br>
 
+### Renomeando o Groovy Script
+![Fluxo](imagens/Screenshot_14.png)
+
+```
+Name: GS_Encode_Base64
+```
+
+<br>
+
+### Adicionando o Groovy Script
+![Fluxo](imagens/Screenshot_15.png)
+
+<br>
+
+### Código do Groovy Script
+```
+import com.sap.gateway.ip.core.customdev.util.Message
+import java.util.Base64
+
+def Message processData(Message message) {
+    
+    def body = message.getBody(String)
+    
+    def encoded = Base64.getEncoder().encodeToString(body.getBytes("UTF-8"))
+    
+    message.setBody(encoded)
+    
+    return message
+}
+```
+![Fluxo](imagens/Screenshot_16.png)
+
+<br>
 
 
 
@@ -181,26 +219,7 @@ Name: CV_Base64_Decode
 
 
 
-⚙️ 3. Groovy Script
-```
-Name: GS_Encode_Base64
-```
 
-```
-import com.sap.gateway.ip.core.customdev.util.Message
-import java.util.Base64
-
-def Message processData(Message message) {
-    
-    def body = message.getBody(String)
-    
-    def encoded = Base64.getEncoder().encodeToString(body.getBytes("UTF-8"))
-    
-    message.setBody(encoded)
-    
-    return message
-}
-```
 
 
 
