@@ -10,9 +10,7 @@ SAP BTP CPI - BASE64_ENCODE_DECODE
 
 # :building_construction: Arquitetura do iFlow
 
-## 🔄 Fluxo da Integração
-
-### Criação do Pacote 
+## 🔄 1. Fluxo da Integração
 
 ### Criando o Package
 ![Fluxo](imagens/Screenshot_1.png)
@@ -26,7 +24,19 @@ ZPKG_BASE64_ENCODE_DECODE
 ```
 <br>
 
+## 🧩 2. Criação do Integration Flow
 
+### Adicionando o Artefato
+![Fluxo](imagens/Screenshot_3.png)
+
+<br>
+
+### Nome do iFlow
+![Fluxo](imagens/Screenshot_4.png)
+```
+IF_Carros_Router_XPath_vs_Header
+```
+<br>
 
 
 
