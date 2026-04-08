@@ -10,6 +10,22 @@ SAP BTP CPI - BASE64_ENCODE_DECODE
 
 # :building_construction: Arquitetura do iFlow
 
+<br>
+
+### Entrada no Postman
+
+## 🌐 🔹 1.POSTMAN
+```
+{
+  "id": 1,
+  "title": "TESTE",
+  "body": "TESTANDO"
+}
+```
+
+<br>
+
+
 ## 🔄 1. Fluxo da Integração
 
 <br>
@@ -161,69 +177,14 @@ def Message processData(Message message) {
 
 <br>
 
+## ⚙️ 7. Content Modifier
 
+### Adicionando o Content Modifier
+![Fluxo](imagens/Screenshot_17.png)
 
+<br>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-### Entrada no Postman
-
-## 🌐 🔹 1.POSTMAN
-```
-{
-  "id": 1,
-  "title": "TESTE",
-  "body": "TESTANDO"
-}
-```
-
-## 🧩 🔧 iFlow COMPLETO (Baseado nessa JSON)
-
-
-
-
-
-
-
-
-
-
-⚙️ 3. Base64 Decoder
-```
-Name: CV_Base64_Decode
-```
-
-
-
-
-
-
-
-
-⚙️ 5. Content Modifier
+### Configurando o Content Modifier
 ```
 Name: CM_Save_Encoded_Base64
 Exchange Property
@@ -232,12 +193,26 @@ Source Type: Expression
 Source Value: ${body}
 Data Type: java.lang.String
 ```
+![Fluxo](imagens/Screenshot_18.png)
 
-⚙️ 6. Content Modifier
+<br>
+
+## ⚙️ 8. Content Modifier
+
+### Adicionando o Content Modifier
+![Fluxo](imagens/Screenshot_19.png)
+
+<br>
+
+### Renomeando o Content Modifier
 ```
 Name: CM_Build_Final_Response
 ```
+![Fluxo](imagens/Screenshot_20.png)
 
+<br>
+
+### Configurando o Content Modifier
 ```
 Type: Expression
 Body: 
@@ -247,9 +222,13 @@ Body:
   "encoded_again": "${property.encoded_body}"
 }
 ```
+![Fluxo](imagens/Screenshot_21.png)
 
-🎯 Resultado
+<br>
 
+## 9. 🎯 Resultado
+
+### Resposta Decode e Encode
 ```
 {
   "base64_original": "eyJpZCI6MSwidGl0bGUiOiJURVNURSIsImJvZHkiOiJURVNUQU5ETyJ9",
@@ -261,6 +240,42 @@ Body:
   "encoded_again": "eyJpZCI6MSwidGl0bGUiOiJURVNURSIsImJvZHkiOiJURVNUQU5ETyJ9"
 }
 ```
+![Fluxo](imagens/Screenshot_22.png)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
