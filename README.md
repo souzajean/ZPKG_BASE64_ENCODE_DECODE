@@ -65,6 +65,21 @@ Endpoint:
 <br>
 
 ## ⚙️ 4.Content Modifier
+
+### Adicionando o Content Modifier
+![Fluxo](imagens/Screenshot_7.png)
+
+<br>
+
+### Renomeando o Content Modifier
+![Fluxo](imagens/Screenshot_8.png)
+```
+Name: CM_Save_Base64_Original
+```
+
+<br>
+
+### Configurando o Content Modifier
 ```
 Name: CM_Save_Base64_Original
 Exchange Property
@@ -73,11 +88,35 @@ Source Type: Expression
 Source Value: ${body}
 Data Type: java.lang.String
 ```
-![Fluxo](imagens/Screenshot_7.png)
-```
-/
-```
+![Fluxo](imagens/Screenshot_9.png)
+
 <br>
+
+## ⚙️ 5.Content Modifier
+
+### Adicionando o Content Modifier
+![Fluxo](imagens/Screenshot_10.png)
+
+<br>
+
+### Renomeando o Content Modifier
+![Fluxo](imagens/Screenshot_11.png)
+```
+Name: CM_Save_Decoded_JSON
+```
+
+<br>
+
+### Configurando o Content Modifier
+```
+Name: CM_Save_Decoded_JSON
+Exchange Property
+Name: decoded_body
+Source Type: Expression
+Source Value: ${body}
+Data Type: java.lang.String
+```
+![Fluxo](imagens/Screenshot_12.png)
 
 
 
@@ -138,15 +177,7 @@ Data Type: java.lang.String
 Name: CV_Base64_Decode
 ```
 
-⚙️ 4. Content Modifier
-```
-Name: CM_Save_Decoded_JSON
-Exchange Property
-Name: decoded_body
-Source Type: Expression
-Source Value: ${body}
-Data Type: java.lang.String
-```
+
 
 
 ⚙️ 3. Groovy Script
