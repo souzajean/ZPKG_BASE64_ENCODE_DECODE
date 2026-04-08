@@ -52,15 +52,30 @@ IF_CPI_Base64_EncodeDecode_Service
 
 ## 🌐 3. Configuração do Adapter HTTPS
 
-### Adicionando o Adapter
+### Trigger (HTTPS)
+
+```
+Adapter: HTTPS
+Method: GET ou POST
+Endpoint:
+/download-anexo
+```
 ![Fluxo](imagens/Screenshot_6.png)
 
 <br>
 
-### Endpoint configurado
+## ⚙️ 4.Content Modifier
+```
+Name: CM_Save_Base64_Original
+Exchange Property
+Name: base64_original
+Source Type: Expression
+Source Value: ${body}
+Data Type: java.lang.String
+```
 ![Fluxo](imagens/Screenshot_7.png)
 ```
-/carros
+/
 ```
 <br>
 
@@ -112,26 +127,11 @@ IF_CPI_Base64_EncodeDecode_Service
 
 
 
-### ⚙️ 1. Trigger (HTTPS)
-
-```
-Adapter: HTTPS
-Method: GET ou POST
-Endpoint:
-/download-anexo
-```
 
 
 
-⚙️ 2.Content Modifier
-```
-Name: CM_Save_Base64_Original
-Exchange Property
-Name: base64_original
-Source Type: Expression
-Source Value: ${body}
-Data Type: java.lang.String
-```
+
+
 
 ⚙️ 3. Base64 Decoder
 ```
