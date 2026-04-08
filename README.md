@@ -1,6 +1,20 @@
 # ZPKG_BASE64_ENCODE_DECODE
 SAP BTP CPI - BASE64_ENCODE_DECODE
 
+## 📘 Descrição
+
+Implementação de um iFlow no SAP BTP Integration Suite responsável por realizar operações de encode e decode em Base64.
+
+O fluxo contempla:
+- Recebimento de requisição via HTTPS (REST)
+- Persistência de dados em Exchange Properties
+- Processamento com Groovy Script
+- Construção de resposta customizada
+
+O retorno inclui:
+- Payload original em Base64
+- Conteúdo decodificado (JSON)
+- Payload reprocessado (encoded novamente)
 
 ![Fluxo](imagens/capa-linkedin.png)
 
