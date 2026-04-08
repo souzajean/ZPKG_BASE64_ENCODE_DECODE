@@ -14,7 +14,7 @@ SAP BTP CPI - BASE64_ENCODE_DECODE
 
 ### Entrada no Postman
 
-## 🌐 🔹 1.POSTMAN
+## 🌐 🔹 POSTMAN
 ```
 {
   "id": 1,
