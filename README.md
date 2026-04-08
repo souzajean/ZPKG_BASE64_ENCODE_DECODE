@@ -2,6 +2,18 @@
 SAP BTP CPI - BASE64_ENCODE_DECODE
 
 
+![Fluxo](imagens/capa-linkedin.png)
+
+---
+
+<br>
+
+# :building_construction: Arquitetura do iFlow
+
+## 🔄 Fluxo da Integração
+
+### Entrada no Postman
+
 🌐 🔹 1.POSTMAN
 ```
 {
